@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/dynamic-pdf-report-engine",
+    "description": "Lightning-fast financial report and invoice rendering engine with stream compression, barcode generators, and font caching.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\DocForgePdf\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\DocForgePdf\\PackageServiceProvider"
+            ]
+        }
+    }
+}
